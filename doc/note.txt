@@ -1,0 +1,18 @@
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ SpringAOPExample ---
+[INFO] com.jcg.examples.springAoopExample:SpringAOPExample:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework:spring-core:jar:4.2.3.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] +- org.springframework:spring-context:jar:4.2.3.RELEASE:compile
+[INFO] |  +- org.springframework:spring-beans:jar:4.2.3.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.2.3.RELEASE:compile
+[INFO] +- org.aspectj:aspectjweaver:jar:1.8.8:compile
+[INFO] +- org.springframework:spring-aop:jar:4.2.4.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- commons-beanutils:commons-beanutils:jar:1.9.4:compile
+[INFO] |  \- commons-collections:commons-collections:jar:3.2.2:compile
+[INFO] +- org.projectlombok:lombok:jar:1.18.12:compile
+[INFO] \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO]    +- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO]    \- org.slf4j:slf4j-api:jar:1.7.25:compile
+
+
