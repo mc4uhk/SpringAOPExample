@@ -13,6 +13,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
+import com.jcg.examples.bo.BusinessTargetObject;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Aspect
@@ -24,7 +26,10 @@ public class Profiler2 {
 	public void logBeforeTxn(JoinPoint joinpoint)
 			throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		log.info(BeanUtils.describe(joinpoint).toString());
-		log.info(joinpoint.getArgs()[0].toString());
+		//log.info(joinpoint.getArgs()[0].toString());
+		log.info(joinpoint.getTarget().toString());
+		BusinessTargetObject bo = (BusinessTargetObject) joinpoint.getTarget();
+		bo.setName("Evie");
 		System.out.println("Beginning execution for " + joinpoint.getSignature().getName());
 	}
 

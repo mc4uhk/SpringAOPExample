@@ -11,7 +11,7 @@ public class TestLoggingAspect
 		{
 				ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new ClassPathResource("spring-configuration.xml").getPath());
 				BusinessTargetObject target = context.getBean(BusinessTargetObject.class);
-				target.sayHello("Evie");
+				target.sayHello();
 				target.performTransaction("JavaCodeGeeks");
 				target.merryGoAround();
 				target.throwException();
